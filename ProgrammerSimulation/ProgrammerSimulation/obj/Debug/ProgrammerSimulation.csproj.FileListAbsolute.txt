@@ -1,0 +1,6 @@
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.exe.config
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.exe
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.pdb
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.csproj.CoreCompileInputs.cache
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.exe
+D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.pdb
