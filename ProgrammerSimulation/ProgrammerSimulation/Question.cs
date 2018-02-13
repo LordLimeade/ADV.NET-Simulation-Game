@@ -51,8 +51,9 @@ namespace ProgrammerSimulation
         public void askQuestion()
         {
             isCorrect = false;
-
-            while (!isCorrect)
+            int count = 1;
+            
+            while (count <= _tries + 1)
             {
                 Console.WriteLine("\n-------------------------------------------");
                 Console.WriteLine(_question);
@@ -76,9 +77,14 @@ namespace ProgrammerSimulation
                     if (_points < 0)
                     {
                         _points = 0;
-                        Console.WriteLine(_help);
                     }
                 }
+
+                if (count == _tries - 1)
+                {
+                    Console.WriteLine(_help);
+                }
+                count++;
             }
         }
     }
