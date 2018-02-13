@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 
@@ -20,7 +21,7 @@ namespace ProgrammerSimulation
             Title();
             string menuOption;
             Console.WriteLine("-----------------------------------------------------------------------");
-            Console.WriteLine("Menu Items:   1-Game       2-High Scores    ");
+            Console.WriteLine("Menu Items:   1-Game       2-High Scores       3-Exit");
             Console.WriteLine("-----------------------------------------------------------------------");
             menuOption = Console.ReadLine();
 
@@ -31,6 +32,10 @@ namespace ProgrammerSimulation
             else if(menuOption == "2")
             {
                 HighScores();
+            }
+            else if (menuOption == "3")
+            {
+                Environment.Exit(0);
             }
                 
         }
@@ -116,36 +121,33 @@ TTTTTT  T:::::T  TTTTTTooooooooooo   ppppp   ppppppppp           1::::1   0:::::
             Console.WriteLine("\nPress Enter to Return to Menu");
             Console.ReadLine();
             Menu();
-
         }
 
         public static void Game()
         {
-            Title();
             Console.WriteLine("Lets get started!");
+            int totPoints = 0;
 
-            String question;
-            String answer;
-            String correct;
+            String[] lines = System.IO.File.ReadAllLines("Questions.dat");
+            List<Question> questions = new List<Question>();
 
-            question = "Declare a variable called x of type Integer (Don't forget your semicolons!)";
-            answer = "intx;";
-            correct = "Looks good! Here comes your next challenge";
+            foreach (String s in lines)
+            {
+                String[] con = s.Split('~');
+                questions.Add(new Question(con[0], con[1], con[2], con[3], int.Parse(con[4])));
+            }
 
-            Question one = new Question(question, answer, correct, 3);
-
-            one.askQuestion();
-
-            question = "Assign 3 to the variable you defined above.";
-            answer = "x=3;";
-            correct = "Variable defined.";
-
-            Question two = new Question(question, answer, correct, 3);
-            two.askQuestion();
+            foreach (Question q in questions)
+            {
+                q.askQuestion();
+                totPoints += q.getPoints();
+            }
 
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
+            Console.WriteLine("Points: " + totPoints);
+            Console.WriteLine("Press any key to return to the menu.");
             Console.ReadKey();
+            Menu();
         }
 
 

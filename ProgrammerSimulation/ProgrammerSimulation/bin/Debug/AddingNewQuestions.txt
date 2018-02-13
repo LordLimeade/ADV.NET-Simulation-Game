@@ -1,0 +1,12 @@
+Each question takes up one line aand receives five arguments listed below.
+***
+* String Question: The actual question to ask.
+* String Answer: The exactly correct answer to your question. This is entered with no spaces.
+* String Correct: The statement to display when the user gets the question correct.
+* String Resource: A resource that the user can consult if they need help on the question.
+* Int Tries: the number of tries a user has before they receive no points for the question.
+***
+
+Any amount of questions can be asked about any topic. Just so long as each question takes up one line and is entered in the following format.
+
+Question~Answer~Correct~Resource~Tries

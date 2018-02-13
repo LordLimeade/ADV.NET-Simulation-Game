@@ -21,10 +21,11 @@ namespace ProgrammerSimulation
         private String _question;
         private String _answer;
         private String _correct;
+        private String _help = "If you're having trouble check out this resource.\n";
 
         private Boolean isCorrect = false;
 
-        public Question(String question, String answer, String correct, int tries)
+        public Question(String question, String answer, String correct, String help, int tries)
         {
             if (tries <= 0)
             {
@@ -39,6 +40,12 @@ namespace ProgrammerSimulation
             _answer = answer;
             _correct = correct;
             _points = _tries;
+            _help += help;
+        }
+
+        public int getPoints()
+        {
+            return _points;
         }
 
         public void askQuestion()
@@ -47,10 +54,11 @@ namespace ProgrammerSimulation
 
             while (!isCorrect)
             {
+                Console.WriteLine("\n-------------------------------------------");
                 Console.WriteLine(_question);
                 String entry = Console.ReadLine();
 
-                Console.Write("{0,24}", "You entered \"" + entry + "\" ");
+                Console.WriteLine("{0,-24}", "You entered \"" + entry + "\" ");
 
                 entry = entry.Replace(" ", String.Empty);
 
@@ -64,10 +72,14 @@ namespace ProgrammerSimulation
                 else
                 {
                     Console.WriteLine();
+                    _points -= 1;
+                    if (_points < 0)
+                    {
+                        _points = 0;
+                        Console.WriteLine(_help);
+                    }
                 }
             }
-
-
         }
     }
 }
