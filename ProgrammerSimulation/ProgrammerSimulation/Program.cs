@@ -125,8 +125,20 @@ TTTTTT  T:::::T  TTTTTTooooooooooo   ppppp   ppppppppp           1::::1   0:::::
 
         public static void Game()
         {
-            Console.WriteLine("Lets get started!");
+            String name = "";
             int totPoints = 0;
+            Boolean valid = false;
+
+            Console.WriteLine("Lets get started!");
+            while (!valid)
+            {
+                Console.WriteLine("Enter Your Name: ");
+                name = Console.ReadLine();
+                if (name != "")
+                {
+                    valid = true;
+                }
+            }
 
             String[] lines = System.IO.File.ReadAllLines("Questions.dat");
             List<Question> questions = new List<Question>();
@@ -145,6 +157,22 @@ TTTTTT  T:::::T  TTTTTTooooooooooo   ppppp   ppppppppp           1::::1   0:::::
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Points: " + totPoints);
+            con = new OleDbConnection();
+            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=ScoreDB.accdb";
+            cmd = new OleDbCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "INSERT INTO Scores (UserName,Score) VALUES ('" + name + "','" + totPoints + "')";
+            con.Open();
+            int sonuc = cmd.ExecuteNonQuery();
+            con.Close();
+            if (sonuc > 0)
+            {
+                Console.WriteLine("Inserted");
+            }
+            else
+            {
+                Console.WriteLine("You Screwed up something Dan. The record was not inserted.");
+            }
             Console.WriteLine("Press any key to return to the menu.");
             Console.ReadKey();
             Menu();
