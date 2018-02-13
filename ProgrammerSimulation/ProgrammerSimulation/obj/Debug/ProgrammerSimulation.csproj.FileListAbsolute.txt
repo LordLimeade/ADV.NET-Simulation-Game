@@ -4,3 +4,10 @@ D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\G
 D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.csproj.CoreCompileInputs.cache
 D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.exe
 D:\Stuff\Desktop Files\Other\Classes\YearTwo\Term6Winter\Advanced NET\Projects\GameNet\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.pdb
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.exe.config
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.exe
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\bin\Debug\ProgrammerSimulation.pdb
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.csprojResolveAssemblyReference.cache
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.csproj.CoreCompileInputs.cache
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.exe
+C:\College\Dot Net\GroupGame\GitKraken\ADV.NET-Simulation-Game\ProgrammerSimulation\ProgrammerSimulation\obj\Debug\ProgrammerSimulation.pdb
