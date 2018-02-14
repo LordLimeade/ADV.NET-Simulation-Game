@@ -53,7 +53,7 @@ namespace ProgrammerSimulation
             isCorrect = false;
             int count = 1;
             
-            while (count <= _tries + 1)
+            while (count <= _tries + 1 && !isCorrect)
             {
                 Console.WriteLine("\n-------------------------------------------");
                 Console.WriteLine(_question);
