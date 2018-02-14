@@ -14,4 +14,3 @@ Assign false to the boolean variable isValid.~isValid=false;~Nice One!~Try again
 Define a integer variable y~int=y;~Good Job!~Bad Job!~3
 Assign 1 to the variable y.~y=1;~Good Job!~WRONG!~3
 Next, define an if statement that checks if the variable isValid is true. If isValid is true add 2 to the variable y~if(isValid=true){y=+2};~Hey! Perfect!~Hey, that doesn't look right~3
-Define a Boolean Variable check and assign and Double Variable bar. Assign false to the variable check and 1.3 to the variable bar. 
