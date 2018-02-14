@@ -80,7 +80,7 @@ namespace ProgrammerSimulation
                     }
                 }
 
-                if (count == _tries - 1)
+                if (count == _tries - 1 && !isCorrect)
                 {
                     Console.WriteLine(_help);
                 }
